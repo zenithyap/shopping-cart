@@ -1,0 +1,27 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(222, 240, 255);
+}
