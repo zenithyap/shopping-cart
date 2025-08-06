@@ -1,11 +1,11 @@
-import Layout from "./Components/Layout";
-import Home from "./Components/Home/Home";
-import Shop from "./Components/Shop/Shop";
-import Cart from "./Components/Cart/Cart";
+import Layout from './Components/Layout';
+import Home from './Components/Home/Home';
+import Shop from './Components/Shop/Shop';
+import Cart from './Components/Cart/Cart';
 
 const routes = [
   {
-    path: "/",
+    path: '/',
     element: <Layout />,
     children: [
       {
@@ -13,15 +13,15 @@ const routes = [
         element: <Home />,
       },
       {
-        path: "/shop",
+        path: '/shop',
         element: <Shop />,
       },
       {
-        path: "/cart",
+        path: '/cart',
         element: <Cart />,
       },
     ],
   },
-]
+];
 
 export default routes;
