@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './shop.module.css'
 import Card from '../Card/Card';
+import Loading from '../Loading/Loading';
 
 export default function Shop() {
   const [items, setItems] = useState(null);
@@ -30,7 +31,7 @@ export default function Shop() {
 
   return (
     <>
-      {loading && <p>Loading data...</p>}
+      {loading && <Loading />}
       {error && <p>{error}</p>}
       <ul className={styles.container}>
         {items && items.map(item => (
