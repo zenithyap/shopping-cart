@@ -3,7 +3,7 @@
 exports[`Navbar component > Navbar should render correctly 1`] = `
 <div>
   <div
-    class="_navbar_0f09f7"
+    class="_navbar_d78bf3"
   >
     <a
       data-discover="true"
