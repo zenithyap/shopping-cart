@@ -2,7 +2,7 @@ import styles from './card.module.css';
 import { useOutletContext } from 'react-router-dom';
 
 export default function Card({ item }) {
-  const [cartItems, setCartItems] = useOutletContext();
+  const [_, setCartItems] = useOutletContext();
 
   function handleAddClick() {
     setCartItems(prev => ({

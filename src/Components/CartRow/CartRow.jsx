@@ -13,7 +13,7 @@ export default function CartRow({ item, handleAddClick, handleRemoveClick }) {
       <p>Total Price: ${item.price * item.quantity}</p>
       <div>
         <p>Quantity: {item.quantity}</p>
-        <button onClick={() => handleRemoveClick(item)}>-</button>
+        <button className={styles.leftButton} onClick={() => handleRemoveClick(item)}>-</button>
         <button onClick={() => handleAddClick(item)}>+</button>
       </div>
     </div>

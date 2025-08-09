@@ -7,26 +7,17 @@
   align-items: center;
 }
 
-h1 {
+.homeContainer h1 {
   font-size: 5rem;
 }
 
-h2 {
+.homeContainer h2 {
   font-size: 2rem;
 }
 
-.btn {
+.homeContainer button {
     padding: 10px 15px;
-    background: none;
-    border: 2px solid rgb(145, 145, 145);
-    border-radius: 5px;
-    transition: transform 0.2s ease-in-out;
     text-decoration: none;
     color: #000;
     font-weight: bold;
-}
-
-.btn:hover {
-    cursor: pointer;
-    transform: scale(1.1);
 }

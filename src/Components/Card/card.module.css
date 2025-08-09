@@ -25,21 +25,14 @@
     justify-content: space-between;
 }
 
-h4 {
+.container h4 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-button {
+.row button {
     padding: 5px 10px;
-    background: none;
-    border: 2px solid rgb(145, 145, 145);
     border-radius: 5px;
-    transition: transform 0.2s ease-in-out;
 }
 
-button:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
