@@ -35,7 +35,7 @@ export default function Shop() {
       {error && <p>{error}</p>}
       <ul className={styles.container}>
         {items && items.map(item => (
-          <li>
+          <li key={item.id}>
             <Card item={item} />
           </li>
         ))}

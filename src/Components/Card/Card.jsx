@@ -6,8 +6,9 @@ export default function Card({ item }) {
 
   function handleAddClick() {
     setCartItems(prev => ({
-      ...cartItems,
+      ...prev,
       [item.id]: {
+        id: item.id,
         title: item.title,
         price: item.price,
         image: item.image,
