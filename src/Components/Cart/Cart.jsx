@@ -35,7 +35,7 @@ export default function Cart() {
   if (Object.keys(cartItems).length === 0)
     return (
       <div className={styles.center}>
-        <h2>Your cart is currently empty 😔</h2>
+        <h1>Your cart is currently empty 😔</h1>
       </div>
     );
 
