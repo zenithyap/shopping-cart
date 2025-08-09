@@ -2,11 +2,13 @@ import Layout from './Components/Layout';
 import Home from './Components/Home/Home';
 import Shop from './Components/Shop/Shop';
 import Cart from './Components/Cart/Cart';
+import Error from './Components/Error/Error';
 
 const routes = [
   {
     path: '/',
     element: <Layout />,
+    errorElement: <Error />,
     children: [
       {
         index: true,
