@@ -18,3 +18,7 @@
 button {
   font-size: inherit;
 }
+
+button:active {
+  background-color: rgb(233, 234, 233);
+}
