@@ -36,7 +36,7 @@ describe('Shop component', () => {
       Promise.resolve({
         ok: true,
         status: 200,
-        json: () => Promise.resolve(mockItems),
+        json: () => mockItems,
       }),
     );
 
