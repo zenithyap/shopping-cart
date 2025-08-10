@@ -1,20 +1,33 @@
-import { describe, it, expect } from "vitest"
-import { render, screen } from "@testing-library/react"
-import Home from "../src/Components/Home/Home"
+import { describe, it, expect } from 'vitest';
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import Home from '../src/Components/Home/Home';
 
-describe("Home component", () => {
-    it("Renders correct heading", () => {
-        render(<Home />);
-        expect(screen.getByRole("heading", {name: "Shoply"}));
-    });
+function renderHome() {
+  render(
+    <MemoryRouter>
+      <Home />
+    </MemoryRouter>,
+  );
+}
 
-    it("Renders correct description", () => {
-        render(<Home />);
-        expect(screen.getByRole("heading", {name: "The best shopping site ever created!"}));
-    });
+describe('Home component', () => {
+  it('Renders correct heading', () => {
+    renderHome();
+    expect(screen.getByRole('heading', { name: 'Shoply' }));
+  });
 
-    it("Renders correct shop button", () => {
-        render(<Home />);
-        expect(screen.getByRole("button", {name: "Shop Now"}));
-    });
+  it('Renders correct description', () => {
+    renderHome();
+    expect(
+      screen.getByRole('heading', {
+        name: 'The best shopping site ever created!',
+      }),
+    );
+  });
+
+  it('Renders correct shop button', () => {
+    renderHome();
+    expect(screen.getByRole('button', { name: 'Shop Now' }));
+  });
 });
