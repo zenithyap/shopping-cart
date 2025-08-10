@@ -23,11 +23,11 @@ describe('Home component', () => {
       screen.getByRole('heading', {
         name: 'The best shopping site ever created!',
       }),
-    );
+    ).toBeInTheDocument();
   });
 
   it('Renders correct shop button', () => {
     renderHome();
-    expect(screen.getByRole('button', { name: 'Shop Now' }));
+    expect(screen.getByRole('button', { name: 'Shop Now' })).toBeInTheDocument();
   });
 });

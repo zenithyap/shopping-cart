@@ -9,6 +9,6 @@ describe('Error component', () => {
       screen.getByRole('heading', {
         name: 'Error 404: Nothing to be found here 🫠',
       }),
-    );
+    ).toBeInTheDocument();
   });
 });
