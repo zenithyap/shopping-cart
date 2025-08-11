@@ -5,6 +5,7 @@
   height: calc(100vh - 140px);
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .homeContainer h1 {
