@@ -28,7 +28,9 @@ button:active {
   background-color: rgb(233, 234, 233);
 }
 
-button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
