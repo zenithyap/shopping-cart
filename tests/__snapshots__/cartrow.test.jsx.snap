@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CartRow component > Should display values properly 1`] = `
+<div>
+  <div
+    class="_row_611b28"
+  >
+    <div
+      class="_imageTitle_611b28"
+    >
+      <div
+        class="_imageContainer_611b28"
+      >
+        <img
+          alt="Mock Item"
+        />
+      </div>
+      <p>
+        Mock Item
+      </p>
+    </div>
+    <div
+      class="_spacer_611b28"
+    />
+    <p>
+      Total Price: $
+      4
+    </p>
+    <div>
+      <p>
+        Quantity: 
+        2
+      </p>
+      <button
+        class="_leftButton_611b28"
+      >
+        -
+      </button>
+      <button>
+        +
+      </button>
+    </div>
+  </div>
+</div>
+`;
