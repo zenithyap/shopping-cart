@@ -39,3 +39,13 @@
 .row .leftButton {
     margin-right: 5px;
 }
+
+@media (max-width: 600px) {
+    .row .leftButton {
+        margin-right: 2px;
+    }
+
+    .row p {
+        font-size: 0.8rem;
+    }
+}

@@ -9,7 +9,6 @@ export default function CartRow({ item, handleAddClick, handleRemoveClick }) {
         </div>
         <p>{item.title}</p>
       </div>
-      <div className={styles.spacer}></div>
       <p>Total Price: ${item.price * item.quantity}</p>
       <div>
         <p>Quantity: {item.quantity}</p>
