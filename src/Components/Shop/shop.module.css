@@ -6,3 +6,10 @@
     padding-inline: 3rem;
     align-items: stretch;
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding-inline: 1rem;
+        gap: 1rem;
+    }
+}

@@ -11,3 +11,10 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 600px) {
+    .container {
+        padding-inline: 1rem;
+        gap: 1rem;
+    }
+}
